@@ -10,49 +10,121 @@
 </head>
 
 <body class="mainbody">
-<div class="OrgName" style=" font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';font-size: 28px; font:bold;"><h3>Project Pinedesk EN</h3>
-</div>
-<div class="Panel" style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; font-size: 14px;">
-	<div class="Lpanel">
-  <div class ="LPItems"><button class="NavBtn">Home</button></div>
-	<div class ="LPItems"><button class="NavBtn">Local</button></div>
-	<div class ="LPItems"><button class="NavBtn">National</button></div>
-	<div class ="LPItems"><button class="NavBtn">More</button></div>
-		</div>
-	<div class="Rpanel">
-	<div class ="RPItems"><a href="page/ne_index.html"><button class="NavBtn">Switch</button></a></div>
-		</div>
-</div>
-	
-<div class="TitlePanel">
-  <h3>Breaking News</h3>
-	<hr style="background: black; height: 4px;border: 30px; border-radius: 12px;">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="/page/en/local.html">Cat 1</a>
+		<a href="/page/en/local.html">Cat 2</a>
+		<a href="/page/en/local.html">Cat 3</a>
+		<a href="/page/en/local.html">Cat 4</a>
 	</div>
-
-<div class="NewsPanel" align="center">
-
-	<div class="contain">
-<img  src="images/ImgResponsive_Placeholder.png" class="rounded img-fluid newsimg" alt="Placeholder image">
-	<div class="Overlay"></div>
-		</div>
-	<div class="contain">
-<img  src="images/ImgResponsive_Placeholder.png" class="rounded img-fluid newsimg" alt="Placeholder image">
-	<div class="Overlay"></div>
-		</div>
-	<div class="contain">
-<img  src="images/ImgResponsive_Placeholder.png" class="rounded img-fluid newsimg" alt="Placeholder image">
-	<div class="Overlay"></div>
-		</div>
-	<div class="contain">
-<img  src="images/ImgResponsive_Placeholder.png" class="rounded img-fluid newsimg" alt="Placeholder image">
-	<div class="Overlay"></div>
-		</div>
 	
+	<h3 class="OrgName">PINEDESK</h3>
+	<div class="Panel">
+		<div class="Lpanel">
+			<span class="LPItems" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</div>
+		<div class="Rpanel">
+			<div class ="RPItems"><a href="page/ne_index.html"><button class="NavBtn">Language</button></a></div>
+		</div>
+	</div>
 	
-	<div class= "TitlePanel" align="center">
-		<button type="button" class="btn btn-primary">More</button>
-<hr style="background: black; height: 4px; width: 25%; border: 30px; border-radius: 12px;">
+<div id ="title" class="Panel">
+		<h3>Breaking News</h3>
+		<hr class="divider">
+	</div>
+	
+	<div class="Panel" style="text-align: center">
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='../page/en/news/test.html'" class="newsimg" alt="Placeholder image">
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='page/en/news/test.html'" class="newsimg" alt="Placeholder image">
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='/page/en/news/test.html'" class="newsimg" alt="Placeholder image">	
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='/page/en/news/test.html" class="newsimg" alt="Placeholder image">
+		<div class="Overlay"></div>
 	</div>
 </div>
+	
+	<br>
+<div id ="title" class="Panel">
+		<h3>Editor's Picks</h3>
+		<hr class="divider">
+	</div>
+	
+	<div class="Panel" style="text-align: center">
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='/page/en/news/test.html'" class="newsimg" alt="Placeholder image">
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='/page/en/news/test.html'" class="newsimg" alt="Placeholder image">
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='/page/en/news/test.html'" class="newsimg" alt="Placeholder image">	
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<img  src="images/ImgResponsive_Placeholder.png" onClick="window.location.href='/page/en/news/test.html'" class="newsimg" alt="Placeholder image">
+		<div class="Overlay"></div>
+	</div>
+</div>
+	
+	<br>
+	<div id ="title" class="Panel">
+		<h3>Regional News</h3>
+		<hr class="divider">
+	</div>
+	
+	<div class="Panel" style="text-align: center">
+	<div class="contain">
+		<a href="/page/en/news/test.html"><img  src="images/ImgResponsive_Placeholder.png" class="newsimg" alt="Placeholder image"></a>
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<a href="/page/en/news/test.html"><img  src="images/ImgResponsive_Placeholder.png" class="newsimg" alt="Placeholder image"></a>
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<a href="/page/en/news/test.html"><img  src="images/ImgResponsive_Placeholder.png" class="newsimg" alt="Placeholder image"></a>
+		<div class="Overlay"></div>
+	</div>
+	<div class="contain">
+		<a href="/page/en/news/test.html"><img  src="images/ImgResponsive_Placeholder.png" class="newsimg" alt="Placeholder image"></a>
+		<div class="Overlay"></div>
+	</div>
+		<button type="button" class="paperbtn" onClick="window.location.href='/page/en/local.html'">More</button>
+</div>
+	
+	<br>
+	<div id="footer" class="footerPanel">
+		<h3>PINEDESK &copy; 2021</h3>
+		<h5>Made by AnxSion</h5>
+		</div>
+<script>
+		function openNav() {
+			var m = window.matchMedia("(max-width:480px)");
+			if(m.matches)
+				{
+			document.getElementById("mySidenav").style.width = "100%";
+				}
+			else
+				{
+			document.getElementById("mySidenav").style.width = "30%";		
+				}
+		}
+
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
 </body>
 </html>
