@@ -2,6 +2,14 @@
 .mainbody{
 	min-width: 340px;
 }
+.CategoryCard a{
+	color: Black;
+	transition: all 0.5s ease;
+}
+.CategoryCard a:hover{
+	color: red;
+	text-decoration: none;
+}
 
 .OrgName {
 	padding-top: 10px;
@@ -91,7 +99,7 @@
 	margin: 1px;
 	height: 20px;
 	cursor:pointer
-	}		
+	}	
 .RPItems{
 	float: right;
 	margin-right: 5px;
