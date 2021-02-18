@@ -1,6 +1,7 @@
 @charset "utf-8";
 .mainbody{
 	min-width: 340px;
+	font-family:Roboto;
 }
 .CategoryCard a{
 	color: Black;
