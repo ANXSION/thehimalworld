@@ -3,14 +3,6 @@
 	min-width: 340px;
 	font-family:Roboto;
 }
-.CategoryCard a{
-	color: Black;
-	transition: all 0.5s ease;
-}
-.CategoryCard a:hover{
-	color: red;
-	text-decoration: none;
-}
 
 .OrgName {
 	padding-top: 10px;
@@ -31,6 +23,22 @@
 	position: relative;
 	width: 100%;
 	line-height: 40px;
+}
+.TopPanel {
+	padding-left: 2px;
+	padding-right: 2px;
+	display: block;
+	position:sticky;
+	width: 100%;
+	line-height: 40px;
+	box-shadow: 0 7px 12px -5px rgba(0,0,0,0.4);
+}
+.buffer{
+	border-bottom-left-radius: 0.3rem;
+	border-bottom-right-radius: 0.3rem;
+	height: 30px;
+	width: 100%;
+	box-shadow: 0 7px 12px -5px rgba(0,0,0,0.4);
 }
 .sidenav {
   height: 100%;
@@ -59,12 +67,12 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color:lightgrey;
+  color:white;
   display: block;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 .sidenav a:hover {
-  color: white;
+  color: #24BCFB;
 	text-decoration: none;
 }
 
@@ -90,8 +98,7 @@
 	transition: all 0.7s;
 }
 .NavBtn:hover{
-	color: black;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 5px 10px rgba(0,0,0,0.22);
+	color: #24bcfb;
 }
 .Lpanel {
 	padding-left: 2%;
@@ -127,8 +134,8 @@
 	border-radius: 0.7rem;
 	height: auto;	
 	width:100%;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
-	transition: all 1s cubic-bezier(0.25,0.8,0.25,1);
+	box-shadow: 0 7px 12px -5px rgba(0,0,0,0.4);
+	transition: all 0.7s cubic-bezier(0.25,0.8,0.25,1);
 	}
 .Overlay{
 	position: absolute;
@@ -139,13 +146,13 @@
 	border-radius: 0.7rem;
 	height: 100%;
 	width:100%;
-	background-color: red;
+	background-color: #24BCFB;
 	opacity: 0;
-	transition: 0.7s ease;
+	transition: 0.5s ease;
 }
 	
 .contain:hover .Overlay{
-	opacity: 0.3;	
+	opacity: 0.5;	
 	}
 .contain:hover .newsimg{
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 20px rgba(0,0,0,0.22);
@@ -165,7 +172,7 @@
 	transition: all 1s cubic-bezier(0.25,0.8,0.25,1);
 }
 .paperbtn:hover{
-	color: black;
+	color: #24bcfb;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 5px 10px rgba(0,0,0,0.22);
 }
 
@@ -207,6 +214,7 @@
 /*			Category section Begins 			*/
 
 .CategoryCard{
+	border-radius: 0.3rem;
 	cursor:pointer;
 	vertical-align: top;
 	height: auto;
@@ -215,9 +223,20 @@
 	text-align: justify;
 	margin: 5px;
 	width:48%;
-	box-shadow: 0 8px 12px rgba(0,0,0,0.17);
+	box-shadow: 0 2px 4px 0.2px rgba(0,0,0,0.25);
+	transition: 0.3s;
 }
-
+.CategoryCard:hover{
+	box-shadow: 0 14px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.CategoryCard a{
+	color: Black;
+	transition: all 0.3s ease;
+}
+.CategoryCard a:hover{
+	color: #24BCFB;
+	text-decoration: none;
+}
 .CategoryCard p{
 	font-size: 16px;
 	line-height: 20px;
@@ -245,6 +264,19 @@
 
 /*			Reader section Begins 			*/
 #Reader h1{
+	text-align: justify;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+#Reader h5{
+	font-style: italic;
+	color: gray;
+	text-align: justify;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+#Reader h6{
+	color: gray;
 	text-align: justify;
 	padding-left: 3%;
 	padding-right: 3%;
