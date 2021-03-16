@@ -42,10 +42,7 @@
 	<h6>25th February, 2021</h6>
 
 <div style ="padding-left: 3%;">
-	<div class="fb-share-button" 
-	data-href="https://www.your-domain.com/your-page.html" 
-	data-layout="button_count">
-	</div>
+	<button class="ShareBtn" onclick="share">Share the News</button>
 </div>
 	<br>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officia molestiae laboriosam, rem reprehenderit. Laboriosam quae alias, iure nesciunt dolorum. Eaque, magni, enim. Dolores, provident voluptas dicta commodi vel magni nesciunt sed maiores aperiam illo officiis voluptate at quod, praesentium excepturi enim.</p>
@@ -92,13 +89,20 @@
 		<h5>Made by AnxSion</h5>
 		</div>
 <script>
-	(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+	
+function share() {
+        if (navigator.share) {
+            navigator.share({
+                    title: 'Title',
+                    text: 'The Himal World',
+                    url: 'https:www.thehimalworld.com/page/en/news/dummy.html'
+                })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing', error));
+        } else {
+            console.log("Web Share API is not supported in your browser.")
+        }
+    }
 		
 	function openNav() {
 			var m = window.matchMedia("(max-width:450px)");
