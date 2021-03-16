@@ -42,7 +42,7 @@
 	<h6>25th February, 2021</h6>
 
 <div style ="padding-left: 3%;">
-	<button class="ShareBtn" onclick="share">Share the News</button>
+	<button class="ShareBtn">Share the News</button>
 </div>
 	<br>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officia molestiae laboriosam, rem reprehenderit. Laboriosam quae alias, iure nesciunt dolorum. Eaque, magni, enim. Dolores, provident voluptas dicta commodi vel magni nesciunt sed maiores aperiam illo officiis voluptate at quod, praesentium excepturi enim.</p>
@@ -89,20 +89,20 @@
 		<h5>Made by AnxSion</h5>
 		</div>
 <script>
-	
-function share() {
-        if (navigator.share) {
-            navigator.share({
-                    title: 'Title',
-                    text: 'The Himal World',
-                    url: 'https:www.thehimalworld.com/page/en/news/dummy.html'
-                })
-                .then(() => console.log('Successful share'))
-                .catch((error) => console.log('Error sharing', error));
-        } else {
-            console.log("Web Share API is not supported in your browser.")
-        }
-    }
+const shareButton = document.querySelector('.ShareBtn');
+shareButton.addEventListener('click', event => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'The Title of the news is this',
+      url: 'https://www.thehimalworld.com/page/ne/news/dummy.html'
+    }).then(() => {
+      console.log('Share Successful');
+    })
+    .catch(console.error);
+  } else {
+    // fallback
+  }
+});
 		
 	function openNav() {
 			var m = window.matchMedia("(max-width:450px)");
