@@ -1,7 +1,7 @@
 @charset "utf-8";
 .mainbody{
 	min-width: 340px;
-	font-family:Roboto;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .OrgName {
@@ -50,7 +50,7 @@
   min-width: 300px;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 32px;
   color:lightgrey;
   display: block;
   transition: 0.7s;
@@ -135,6 +135,25 @@
 	margin: 5px;
 	width:92%;
 	}
+.contain h6{
+	font-weight: bold;
+	display: block;
+	font-size: 14px;
+	position: absolute;
+	top:77%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.Newsdivider{
+	top: 66%;
+	left: 10px;;
+	position: absolute;
+	width:70%; 
+	background-color: black; 
+	height: 2px;
+	border: 30px; 
+	border-radius: 12px;
+}
 .newsimg{
 	border-radius: 0.7rem;
 	height: auto;	
