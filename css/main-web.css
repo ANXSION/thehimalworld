@@ -5,8 +5,7 @@
 }
 
 .OrgName {
-	padding-top: 10px;
-	width: 100%;
+	width:120px;;
 	text-align: center;
 }
 .divider{
@@ -25,19 +24,23 @@
 	line-height: 40px;
 }
 .TopPanel {
+	z-index: 1;
+	background-color: white;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 	padding-left: 2px;
 	padding-right: 2px;
 	display: block;
-	position:sticky;
 	width: 100%;
-	line-height: 40px;
+	line-height: 20px;
 	box-shadow: 0 7px 12px -5px rgba(0,0,0,0.4);
 }
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #111;
@@ -106,27 +109,24 @@
 	background-color:black;
 }
 .Lpanel {
+	top:10px;
+	font-size: 35px;
+	position: relative;
 	padding-left: 2%;
-	display: inline-block;
-	width:45%;	
+	display: inline-block;	
+	cursor:pointer
+		
 }
 .Rpanel {
+	top:25px;
+	font-size: 20px;
 	padding-right: 2%;
 	position: relative;
 	float: right;
 	display: inline-block;
-	width:45%;
-}
-.LPItems {
-	margin: 1px;
-	height: 20px;
-	cursor:pointer
-	}	
-.RPItems{
-	float: right;
-	margin-right: 5px;
 	cursor:pointer
 }
+
 .contain{
 	cursor:pointer;
 	display:inline-block; 
@@ -225,6 +225,9 @@
 
 
 @media (min-width:993px) {
+	.sidenav a{
+		font-size: 20px;
+	}
 	.contain{
 		width: 23%;
 	}
