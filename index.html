@@ -1,33 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Himal World</title>
 <link href="css/main-web.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="images/png" href="favicon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="images/pwaICO.png">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Description" content="The official website of the Himal World News. A product of Pinedesk PVT LTD. Made by AnxSion">
 </head>
 
 <body class="mainbody" oncopy="return false" oncut="return false" onpaste="return false">
 	<div id="mySidenav" class="sidenav">
 		<p href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</p>
-		<a href="/page/en/local.html">Local</a>
-		<a href="/page/en/state.html">State</a>
-		<a href="/page/en/sikkim.html">Sikkim</a>
-		<a href="/page/en/national.html">National</a>
-		<a href="/page/en/world.html">World</a>
-		<a href="/page/en/editorial.html">Editorial</a>
-		<a href="/page/en/perspectives.html">Perspectives</a>
-		<a href="/page/en/entertainment.html">Entertainment</a>
-		<a href="/page/en/daily.html">Daily Life</a>
-		<a href="/page/en/archive.html">Archive</a>
+		<a href="page/en/local.html">Local</a>
+		<a href="page/en/state.html">State</a>
+		<a href="page/en/sikkim.html">Sikkim</a>
+		<a href="page/en/national.html">National</a>
+		<a href="page/en/world.html">World</a>
+		<a href="page/en/editorial.html">Editorial</a>
+		<a href="page/en/perspectives.html">Perspectives</a>
+		<a href="page/en/entertainment.html">Entertainment</a>
+		<a href="page/en/daily.html">Daily Life</a>
+		<a href="archive.html">Archive</a>
 		<a href="about.html">About</a>	
 	</div>
 	<div class="TopPanel">
 			<span class="Lpanel"  onclick="openNav()">&#9776;</span>
 		<img class="OrgName" src="images/logo.png" alt ="The Himal World">
-			<div class ="Rpanel"><a href="ne_index.html"><button class="NavBtn">नेपाली</button></a></div>
+	  <div class ="Rpanel"><a href="ne_index.html"><button class="NavBtn">नेपाली</button></a></div>
 	</div>
 	<br>
 <div id ="title" class="Panel">
@@ -44,9 +48,11 @@
 	</div>
 	<div class="contain">
 		<img  src="images/ImgResponsive_Placeholder.png" class="newsimg" alt="Placeholder image">
-		<a class="Overlay" href="page/en/news/dummy.html"></a>
-		<hr class="Newsdivider">
-		<h6 align="left">Title of the News which is too long is is multi lined</h6>
+		<div class="Overlay">
+			<a href="page/en/news/dummy.html"></a>
+			<hr class="Newsdivider">
+			<h6 align="left">Title of the News which is too long is is multi lined</h6>
+		</div>
 	</div>
 	<div class="contain">
 		<img  src="images/ImgResponsive_Placeholder.png" class="newsimg" alt="Placeholder image">	
@@ -134,6 +140,13 @@
 		<h5>Pinedesk PVT LTD.</h5>
 		<h5>Made by AnxSion</h5>
 		</div>
+<script>
+window.addEventListener("load", () => {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+});
+</script>
 <script>
 		function openNav() {
 			var m = window.matchMedia("(max-width:480px)");

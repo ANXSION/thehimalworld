@@ -149,7 +149,7 @@
 	left: 10px;;
 	position: absolute;
 	width:70%; 
-	background-color: black; 
+	background-color: white; 
 	height: 2px;
 	border: 30px; 
 	border-radius: 12px;
@@ -174,9 +174,12 @@
 	opacity: 0;
 	transition: 0.5s ease;
 }
-	
+.Overlay a, hr, h6{
+	color: white;
+	opacity: 1;
+}
 .contain:hover .Overlay{
-	opacity: 0.5;	
+	opacity: 0.7;	
 	}
 .contain:hover .newsimg{
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 20px rgba(0,0,0,0.22);
@@ -202,7 +205,7 @@
 
 #footer .footerPanel{
 	position: relative;
-	bottom: 0;
+	bottom: 0px;
 	display: block;
 	
 }
@@ -215,6 +218,9 @@
 	font-size: 14px;
 }
 @media (min-width:481px) and (max-width: 992px) {
+	.sidenav a{
+		font-size: 18px;
+	}
 	.contain{
 		width: 45%;
 	}
@@ -226,7 +232,7 @@
 
 @media (min-width:993px) {
 	.sidenav a{
-		font-size: 20px;
+		font-size: 22px;
 	}
 	.contain{
 		width: 23%;

@@ -1,26 +1,30 @@
 <!doctype html>
 <html lang="ne">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Himal World</title>
 <link href="css/main-web.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="images/png" href="favicon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="images/pwaICO.png">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Description" content="The official website of the Himal World News. A product of Pinedesk PVT LTD. Made by AnxSion">
 </head>
 
 <body class="mainbody" oncopy="return false" oncut="return false" onpaste="return false">
 	<div id="mySidenav" class="sidenav">
-		<a href="/page/ne/local.html">स्थानिय</a>
-		<a href="/page/ne/state.html">राज्य</a>
-		<a href="/page/ne/sikkim.html">सिक्किम</a>
-		<a href="/page/ne/national.html">राष्ट्रीय</a>
-		<a href="/page/ne/world.html">विश्व</a>
-		<a href="/page/ne/editorial.html">सम्पादकीय</a>
-		<a href="/page/ne/perspectives.html">परिप्रेक्ष्य</a>
-		<a href="/page/ne/entertainment.html">मनोरञ्जन</a>
-		<a href="/page/ne/daily.html">दैनिक जीवन</a>
-		<a href="/page/ne/archive.html">Archive</a>
+		<a href="page/ne/local.html">स्थानिय</a>
+		<a href="page/ne/state.html">राज्य</a>
+		<a href="page/ne/sikkim.html">सिक्किम</a>
+		<a href="page/ne/national.html">राष्ट्रीय</a>
+		<a href="page/ne/world.html">विश्व</a>
+		<a href="page/ne/editorial.html">सम्पादकीय</a>
+		<a href="page/ne/perspectives.html">परिप्रेक्ष्य</a>
+		<a href="page/ne/entertainment.html">मनोरञ्जन</a>
+		<a href="page/ne/daily.html">दैनिक जीवन</a>
+		<a href="ne_archive.html">Archive</a>
 		<a href="about.html">About</a>
 	</div>
 <div class="TopPanel">
@@ -109,6 +113,13 @@
 		<h5>Pinedesk PVT LTD.</h5>
 		<h5>Made by AnxSion</h5>
 		</div>
+<script>
+window.addEventListener("load", () => {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+});
+</script>
 <script>
 		function openNav() {
 			var m = window.matchMedia("(max-width:480px)");
