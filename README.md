@@ -51,4 +51,4 @@ The news image and the banner image for the above news example can be written as
 + **IMG-07072020-3-3A.jpg**
 
 1 banner image: 
-**IMG-07072020-3-B.jpg**.
++ **IMG-07072020-3-B.jpg**.
