@@ -41,7 +41,7 @@ The image naming scheme is as follows:
 
 **IMG-[date]-[news number]-[image number][A or B]**
 
-**A refers to the news image while B reffers to the square banner image.**
+**A** refers to the news image while **B** reffers to the square banner image.
 
 Example: 
 
