@@ -22,8 +22,8 @@ Both the **/en** and **/ne** pages can be edited simultaneously without any inte
 ### 2. News articles
 All the news are articles are to present on the **/news** directory of each language directory (**/en** or **/ne**).
 
-#### The news articles naming scheme are to be as follows:
-###### ART- [Date] - [news phrase] - [news number]
+The news articles naming scheme are to be as follows:
+**ART-[Date]-[news phrase]-[news number]**
 
 Example: The file name of the third news article of the day regarding the rising inflation on 7th July, 2020 can we written as: **ART-07072020-RisingInflation-3.html**
 
@@ -32,8 +32,8 @@ Example: The file name of the third news article of the day regarding the rising
 
 The images are responsive and are to be of good quality. All the images of the entire website is to be loaded in the **/images** directory. 
 
-#### The image naming scheme is as follows:
-###### IMG-[date]-[news number]-[image number][A or B]
+The image naming scheme is as follows:
+**IMG-[date]-[news number]-[image number][A or B]**
 
 **A refers to the news image while B reffers to the square banner image.**
 
