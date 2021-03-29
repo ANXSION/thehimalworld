@@ -45,6 +45,11 @@ Example:
 
 The news image and the banner image for the above news example can be written as:
 
-3 news images: **IMG-07072020-3-1A.jpg**, **IMG-07072020-3-2A.jpg** and **IMG-07072020-3-3A.jpg**.
+3 news images: 
++ **IMG-07072020-3-1A.jpg**
++ **IMG-07072020-3-2A.jpg** 
++ **IMG-07072020-3-3A.jpg**
 
-1 banner image: **IMG-07072020-3-B.jpg**.
+1 banner image: 
+
+**IMG-07072020-3-B.jpg**.
