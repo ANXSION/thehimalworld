@@ -18,6 +18,7 @@ The only thing that needs to be edited to link the articles, is to rename the fi
 
 Both the **/en** and **/ne** pages can be edited simultaneously without any interruption.
 
+---
 
 ### 2. News articles
 All the news are articles are to present on the **/news** directory of each language directory (**/en** or **/ne**).
@@ -30,6 +31,7 @@ Example:
 
 The file name of the third news article of the day regarding the rising inflation on 7th July, 2020 can we written as: **ART-07072020-RisingInflation-3.html**
 
+---
 
 ### 3. Images
 
@@ -52,3 +54,7 @@ The news image and the banner image for the above news example can be written as
 
 1 banner image: 
 + **IMG-07072020-3-B.jpg**.
+
+---
+
+_**Made by AnxSion**_
