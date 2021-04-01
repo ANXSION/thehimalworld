@@ -1,5 +1,5 @@
 # The Himal World
-**A product of Pinedesk Media LLP.**
+**A product of Pine Desk Media Network LLP.**
 
 ![The Himal World](/images/logo.png "The Himal World")
 
