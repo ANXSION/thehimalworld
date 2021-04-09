@@ -2,10 +2,11 @@
 .mainbody{
 	min-width: 340px;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	scroll-behavior: smooth;
 }
 
 .OrgName {
-	width:110px;
+	width:100px;
 	text-align: center;
 }
 .divider{
@@ -80,6 +81,7 @@
   font-size: 36px;
   margin-left: 50px;
 }
+
 #title h3 {
 	padding-left: 2%;
 	text-align: left;
@@ -111,7 +113,7 @@
 }
 .Lpanel {
 	top:10px;
-	font-size: 35px;
+	font-size: 30px;
 	position: relative;
 	padding-left: 2%;
 	display: inline-block;	
@@ -120,7 +122,7 @@
 }
 .Rpanel {
 	top:25px;
-	font-size: 20px;
+	font-size: 18px;
 	padding-right: 2%;
 	position: relative;
 	float: right;
@@ -347,3 +349,17 @@
 	height: auto;
 }
 /*			Reader section Ends 			*/
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: auto;
+}
+::-webkit-scrollbar-thumb {
+  background: #24bcfb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#048DCC;
+}
