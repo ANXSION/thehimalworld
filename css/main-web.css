@@ -255,7 +255,7 @@
 
 @media (min-width:993px) {
 	.sidenav a{
-		font-size: 22px;
+		font-size: 30px;
 	}
 	.contain{
 		width: 23%;
@@ -341,5 +341,9 @@
 	text-align: justify;
 	padding-left: 3%;
 	padding-right: 3%;
+}
+.readerimg{
+	width: 95%;
+	height: auto;
 }
 /*			Reader section Ends 			*/
