@@ -34,13 +34,47 @@
 	padding-right: 12px;
 	display: block;
 	width: 100%;
+	height: 48px;
 	box-shadow: 0 6px 18px -4px rgba(0,0,0,0.4);
 }
+/*
+.SearchLayer {
+	z-index: 2;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	padding-left: 12px;
+	padding-right: 12px;
+	width: 100%;
+	height: 48px;
+	visibility: visible;
+	opacity: 1;
+}
+.Navsearch{
+	position: fixed;
+	top:-9px;
+	width: 80%;
+	height: 18px; 
+}
+.cse .gsc-control-cse,.gsc-control-cse {
+      height: 48px;
+}
+.NavSCol{
+	width: 75%;
+	height: auto;
+	display: inline-block;
+}
+.NavCCol{
+	width: 20%;
+	height: auto;
+	display: inline-block;
+}
+*/
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   background-color: #111;
@@ -114,22 +148,33 @@
 	display: inline-block;
 }
 .ColTopMenu {
+	position: fixed;
+	top:3px;
+	left: 30px;
 	font-size: 30px;
 	display: inline-block;	
 	cursor:pointer
 }
 .ColTopBanner {
+	position: fixed;
+	top:-3px;
+	left: 50px;
 	font-size: 30px;
 	display: inline-block;	
 	cursor:pointer
 }
 .ColTopSearch {
-	width: 45%;
-	font-size: 24px;
+	position: fixed;
+	top:16px;
+	right: 30px;
+	width: 18px;
 	display: inline-block;	
 	cursor:pointer
 }
 .ColTopLang {
+	position: fixed;
+	top:10px;
+	right: 70px;
 	width: 45%;
 	font-size: 20px;
 	display: inline-block;	
@@ -376,4 +421,10 @@
 	position: relative;
 	width: 85%;
 	height: auto;
+}
+
+.social{
+	margin: 20px;
+	width:30px;
+	display: inline-block;
 }
