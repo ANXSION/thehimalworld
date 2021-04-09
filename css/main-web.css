@@ -425,10 +425,24 @@
 
 .social{
 	margin: 20px;
-	width:6%;
+	width:30px;
 	display: inline-block;
 }
-.embed{
-width:95%;
-height:auto;
+
+
+.embed {
+     position: relative;
+     padding-bottom: 65.25%;
+     padding-top: 2px;
+     height: 0;
+     overflow: auto; 
+     -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+     border: solid black 1px;
+} 
+.embed iframe {
+     position: absolute;
+     top: 50px;
+     left: 50px;
+     width: 75%;
+     height: 75%;
 }
