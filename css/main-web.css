@@ -2,6 +2,7 @@
 .mainbody{
 	min-width: 340px;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-display: swap;
 	scroll-behavior: smooth;
 }
 
