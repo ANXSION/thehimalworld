@@ -415,3 +415,7 @@
      width: 75%;
      height: 75%;
 }
+@media (min-width:993px) {
+	.embed iframe{
+		left: 70px;
+}
