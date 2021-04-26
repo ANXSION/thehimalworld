@@ -37,39 +37,7 @@
 	height: 52px;
 	box-shadow: 0 6px 18px -4px rgba(0,0,0,0.4);
 }
-/*
-.SearchLayer {
-	z-index: 2;
-	background-color: white;
-	position: fixed;
-	top: 0;
-	padding-left: 12px;
-	padding-right: 12px;
-	width: 100%;
-	height: 48px;
-	visibility: visible;
-	opacity: 1;
-}
-.Navsearch{
-	position: fixed;
-	top:-9px;
-	width: 80%;
-	height: 18px; 
-}
-.cse .gsc-control-cse,.gsc-control-cse {
-      height: 48px;
-}
-.NavSCol{
-	width: 75%;
-	height: auto;
-	display: inline-block;
-}
-.NavCCol{
-	width: 20%;
-	height: auto;
-	display: inline-block;
-}
-*/
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -148,10 +116,11 @@
 	display: inline-block;
 }
 .ColTopMenu {
+	colour:black;
 	position: fixed;
 	top:3px;
 	left: 30px;
-	font-size: 30px;
+	font-size: 28px;
 	display: inline-block;	
 	cursor:pointer
 }
