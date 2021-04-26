@@ -97,6 +97,7 @@
 	background-color:white;
 	display: inline-block;
 	transition: all 0.7s;
+	outline:none;
 }
 .NavBtn:hover{
 	color: #24bcfb;
@@ -232,6 +233,7 @@
 }
 
 .paperbtn{
+	outline:none;
 	text-align: center;
 	border:none;
 	background: white;
