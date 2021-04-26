@@ -400,7 +400,6 @@
 
 
 .embed {
-     display:inline-block;
      position: relative;
      padding-bottom: 65.25%;
      padding-top: 2px;
@@ -415,8 +414,4 @@
      left: 50px;
      width: 75%;
      height: 75%;
-}
-@media (min-width:993px) {
-	.embed{
-		width:30%;
 }
