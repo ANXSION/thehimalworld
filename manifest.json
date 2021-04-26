@@ -3,7 +3,7 @@
     "short_name": "The Himal World",
     "description": "The official PWA of the Himal World News. A product of Pinedesk PVT LTD.",
     "theme_color": "#FFFFFF",
-    "start_url": "/index.html",
+    "start_url": "https://thehimalworld.com/",
     "scope": "/",
     "display": "standalone",
     "orientation": "portrait",
