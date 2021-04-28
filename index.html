@@ -57,11 +57,8 @@
 		<!-- CATEGORY STARTS -->
 	<hr class="divider"></div>
 	
-	<!-- EMBED STARTS -->
-	<div><div align ="center" ><div class="embed" >
-			<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/cWPsLvrF3MM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div></div></div>
-	<!-- EMBED ENDS -->
+		<div id="embed1" align ="center" >
+		</div>
 	
 	<!-- EMBED STARTS -->
 	<div><div align ="center" ><div class="embed" >
@@ -214,6 +211,12 @@ window.addEventListener("load", () => {
 	function closeSearch() {
 			document.getElementById("SearchLayer").style.visibility = "hidden";
 		}
+	function loadExclusive(){
+		setTimeout(() => {document.getElementById("l10").innerHTML="<div class="embed" >
+			<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/cWPsLvrF3MM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>";}, 3000);
+	}
+	loadExclusive();
 	</script>
 </body>
 </html>
