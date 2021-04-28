@@ -179,15 +179,6 @@ window.addEventListener("load", () => {
 });
 </script>
 <script>
-	if (window.Worker){
-		var embedLoader=new SharedWorker('/workers/embedLoader.js');
-		
-		function main() {
-			embedLoader.postMessage(1);
-			console.log('data given to worker');
-		}
-		main();
-	}
 		function openNav() {
 			var m = window.matchMedia("(max-width:480px)");
 			if(m.matches)
@@ -204,7 +195,11 @@ window.addEventListener("load", () => {
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 		}
-	
+	function loadExclusive(){
+		setTimeout(() => {document.getElementById("embed1").innerHTML="<iframe loading='lazy' width='560' height='315' src='https://www.youtube.com/embed/cWPsLvrF3MM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";}, 1200);
+		setTimeout(() => {document.getElementById("embed2").innerHTML="<iframe loading='lazy' width='560' height='315' src='https://www.youtube.com/embed/iwvOREzipjE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";}, 1200);
+	}
+	loadExclusive();
 	</script>
 </body>
 </html>
