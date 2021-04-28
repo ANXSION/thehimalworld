@@ -183,7 +183,7 @@ window.addEventListener("load", () => {
 		var embedLoader=new Worker('/workers/embedLoader.js');
 		
 		function main() {
-			myWorker.postMessage(1);
+			embedLoader.postMessage(1);
 			console.log('data given to worker');
 		}
 		main();
