@@ -180,7 +180,7 @@ window.addEventListener("load", () => {
 </script>
 <script>
 	if (window.Worker){
-		var embedLoader=new Worker('/workers/embedLoader.js');
+		var embedLoader=new SharedWorker('/workers/embedLoader.js');
 		
 		function main() {
 			embedLoader.postMessage(1);
