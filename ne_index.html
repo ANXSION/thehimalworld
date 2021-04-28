@@ -52,16 +52,19 @@
 		<h3>Himal World Exclusive</h3>
 		<hr class="divider">
 	</div>
+
 	<!-- EMBED STARTS -->
-	<div><div align ="center" ><div class="embed" >
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/cWPsLvrF3MM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div></div></div>
-	<!-- EMBED ENDS -->
+	<div align ="center" >
+		<div id="embed1" class="embed" >
+		</div>
+	</div>
+	<!-- EMBED STARTS -->
 	
 	<!-- EMBED STARTS -->
-	<div><div align ="center" ><div class="embed" >
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/iwvOREzipjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div></div></div>
+	<div align ="center" >
+		<div id="embed2" class="embed" >
+		</div>
+	</div>
 	<!-- EMBED ENDS -->
 <br>
 	
@@ -192,6 +195,11 @@ window.addEventListener("load", () => {
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 		}
+	function loadExclusive(){
+		setTimeout(() => {document.getElementById("embed1").innerHTML="<iframe loading='lazy' width='560' height='315' src='https://www.youtube.com/embed/cWPsLvrF3MM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";}, 2000);
+		setTimeout(() => {document.getElementById("embed2").innerHTML="<iframe loading='lazy' width='560' height='315' src='https://www.youtube.com/embed/iwvOREzipjE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";}, 2000);
+	}
+	loadExclusive();
 	</script>
 </body>
 </html>
